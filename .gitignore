@@ -1,0 +1,36 @@
+# ---- 构建产物 ----
+*.o
+*.obj
+*.a
+*.so
+*.out
+build/
+dist/
+target/
+*.cpio
+*.cpio.gz
+
+# ---- eBPF / 内核实验 ----
+vmlinux.h
+*.bpf.o
+*.skel.h
+*.ko
+# 内核源码树体积巨大（数 GB），绝不入库；如需版本化请只提交补丁/脚本
+linux-*/
+initramfs/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---- 日志 ----
+*.log
+logs/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
